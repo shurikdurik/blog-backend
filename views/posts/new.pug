@@ -1,0 +1,10 @@
+extends ../layouts/app.pug
+
+block content
+    form(action="/posts" method="POST")
+        div Title *
+        input(type="text" name="title")
+        div Body *
+        textarea(rows="10" name="body")
+        input(type="submit" value="Save")
+
