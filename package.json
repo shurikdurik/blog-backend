@@ -4,7 +4,8 @@
   "description": "blog using express and pug",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "nodemon bin/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,15 +21,14 @@
     "url": "https://github.com/shurikdurik/blog-backend/issues"
   },
   "homepage": "https://github.com/shurikdurik/blog-backend#readme",
+  "type": "module",
   "dependencies": {
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
-    "jest-supertest-matchers": "^0.0.2",
     "makefile-for-js": "^0.0.6",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20",
-    "pug": "^3.0.2",
-    "supertest": "^6.3.3"
+    "pug": "^3.0.2"
   }
 }

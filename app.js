@@ -11,7 +11,6 @@ const posts = [
 export default () => {
   const app = new Express();
   app.set('view engine', 'pug');
-  app.use('/assets', Express.static(process.env.NODE_PATH.split(':')[0]));
   app.use(bodyParser.urlencoded({ extended: false }));
 
   app.get('/', (req, res) => {
